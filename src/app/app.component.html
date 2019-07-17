@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <kendo-grid [data]="gridData" [pageSize]="state.take" [skip]="state.skip" [sort]="state.sort" [filter]="state.filter"
+    [sortable]="true" [pageable]="true" [filterable]="true" (dataStateChange)="dataStateChange($event)">
+    <kendo-grid-column field="id" title="ID">
+    </kendo-grid-column>
+    <kendo-grid-column field="employee_name" title="Employee Name">
+    </kendo-grid-column>
+    <kendo-grid-column field="employee_salary" title="Employee Salary" filter="numeric">
+    </kendo-grid-column>
+    <kendo-grid-column field="employee_age" title="Employee Age" filter="numeric">
+    </kendo-grid-column>
+  </kendo-grid>
+</div>
+
+<router-outlet></router-outlet>
